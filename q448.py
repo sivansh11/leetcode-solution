@@ -1,11 +1,4 @@
 def findDisappearedNumbers(nums):
-    # num_set = set(nums)
-    # ret_lis = []
-    # for i in range(1, len(nums) + 1):
-    #     if i not in num_set:
-    #         ret_lis.append(i)
-    # return ret_lis
-
     num_set = set(nums)
     return [i for i in range(1, len(nums) + 1) if i not in num_set]
 

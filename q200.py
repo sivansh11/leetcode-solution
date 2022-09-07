@@ -22,7 +22,7 @@ def neighbours(i, j, max_i, max_j):
 
 def numIslands(grid: list[list[str]]) -> int:
     islands = 0
-    checked = set()            
+    checked = set()
     def check(i, j, island_id):
         if grid[i][j] == '1' and (i, j) not in checked:
             checked.add((i, j))
@@ -45,11 +45,13 @@ print(numIslands([
 ]))
 
 print(numIslands(
-    [['0', '1', '1', '1', '1', '1', '0'],
+[
+    ['0', '1', '1', '1', '1', '1', '0'],
     ['0', '1', '0', '0', '0', '1', '0'],
     ['0', '1', '0', '1', '0', '1', '0'],
     ['0', '1', '0', '1', '0', '1', '0'],
     ['0', '1', '0', '0', '0', '1', '0'],
-    ['0', '1', '1', '1', '1', '1', '0']]
+    ['0', '1', '1', '1', '1', '1', '0']
+]
 ))
 # print(neighbours(1, 1, 3, 3))

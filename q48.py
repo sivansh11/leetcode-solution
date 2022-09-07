@@ -26,6 +26,3 @@ def rotate(matrix: list[list[int]]) -> None:
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 rotate(matrix)
 print(matrix)
-
-a, b, c, d = 1, 2, 3, 4
-a, b, c, d = b, c, d, a
